@@ -127,7 +127,7 @@ export default {
           }
         });
 
-        api.reopenWidget('notification-item', {
+        api.reopenWidget('default-notification-item', {
           description() {
             const data = this.attrs.data;
             const badgeName = data.badge_name;
