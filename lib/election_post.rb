@@ -121,7 +121,7 @@ class DiscourseElections::ElectionPost
       poll_options << build_nominee(topic, user)
     end
 
-    content << "[poll type=regular status=#{poll_status}]#{poll_options}\n[/poll]"
+    content << "[poll type=regular status=#{poll_status} results=on_close]#{poll_options}\n[/poll]"
 
     message = nil
     if status === Topic.election_statuses[:poll]
